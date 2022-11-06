@@ -1,3 +1,100 @@
-body{
-background-color: blue;
+*{
+    box-sizing: border-box
 }
+
+body{
+    font-family: 'Montserrat'; font-size: 18px;
+}
+
+body .header{
+    display: flex;
+    max-height: 90%;
+    margin: 0 auto;
+    top: 0px;
+}
+
+
+body .header .nav{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+body .header .nav .searchArea input{
+    height: 42px;
+    width: 300px;
+    border-radius: 5px;
+    border: 3px solid #004bab;
+    padding: 5 20px;
+    
+}
+
+
+body .header .nav .searchArea button{
+    background: #004bab;
+    border: 1px solid #004bab;
+    color: white;
+    height: 42px;
+    width: 120px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+body .header .nav .contactNav{
+    padding: 10px 0;
+    background-color: #004bab;
+}
+
+body .header .nav .contactNav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+body .header .nav .contactNav a::after{
+    content: '';
+    width: 0px;
+    background: #004bab;
+    display: inline-block;
+    height: 100%;
+    right: -11px;
+    position: absolute;
+}
+
+body .header .nav .contactNav a:hover{
+    text-decoration: underline;
+}
+
+body .header .nav .contactNav a:last-child::after{
+    content: unset;
+}
+
+body .header .nav .mainNav{
+    padding: 10px 0;
+}
+
+body .header .nav .mainNav a{
+    color:#004bab;
+    margin: 0 20px;
+    padding: 10px 0;
+    text-decoration: none;
+    position: relative;
+}
+
+body .header .nav .mainNav a:hover{
+    color: #d7dad9;
+}
+
+body .header .nav .mainNav a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    right: -18px;
+    height: 100%;
+    top: 0px;
+    display: inline-block;
+    background: #0c0c2a44;
+}
+
