@@ -3,7 +3,9 @@
 }
 
 body{
-    font-family: 'Montserrat'; font-size: 18px;
+    font-family: 'Montserrat'; 
+    font-size: 18px;
+    margin: 0px;
 }
 
 body .header{
