@@ -1,26 +1,28 @@
-*{
+* {
     box-sizing: border-box
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    font-family: 'Montserrat'; 
+body {
+    font-family: 'Montserrat';
     font-size: 18px;
     margin: 0px;
 }
 
-body .header{
+body .header {
     display: flex;
     margin-left: 5%;
     top: 5%;
     width: 95%;
 }
 
-body .header .logo{
+body .header .logo {
     display: inline-block;
     width: 25%;
 }
 
-body .header .nav{
+body .header .nav {
     display: flex;
     flex-direction: row;
     width: 75%;
@@ -28,15 +30,20 @@ body .header .nav{
 }
 
 
-body .header .nav .searchArea input{
+body .header .nav .searchArea input {
     height: 42px;
     width: 300px;
     border-radius: 5px;
     border: 3px solid #f39322;
+<<<<<<< Updated upstream
     padding: 5 20px;    
+=======
+    padding: 5 20px;
+
+>>>>>>> Stashed changes
 }
 
-body .header .nav .searchArea button{
+body .header .nav .searchArea button {
     background: #f39322;
     border: 1px solid #f39322;
     color: white;
@@ -46,20 +53,20 @@ body .header .nav .searchArea button{
     padding: 0 20px;
 }
 
-body .header .nav .contactNav{
+body .header .nav .contactNav {
     padding: 10px 0;
     background-color: white;
     display: inline-block;
 }
 
-body .header .nav .contactNav a{
+body .header .nav .contactNav a {
     color: #003399;
     text-decoration: none;
     margin-left: 20px;
-    
+
 }
 
-body .header .nav .contactNav a::after{
+body .header .nav .contactNav a::after {
     content: '';
     width: 0px;
     background: #003399;
@@ -69,31 +76,31 @@ body .header .nav .contactNav a::after{
     position: absolute;
 }
 
-body .header .nav .contactNav a:hover{
+body .header .nav .contactNav a:hover {
     text-decoration: underline;
 }
 
-body .header .nav .contactNav a:last-child::after{
+body .header .nav .contactNav a:last-child::after {
     content: unset;
 }
 
-body .header .nav .mainNav{
+body .header .nav .mainNav {
     padding: 10px 0;
 }
 
-body .header .nav .mainNav a{
-    color:#003399;
+body .header .nav .mainNav a {
+    color: #003399;
     margin: 0 20px;
     padding: 10px 0;
     text-decoration: none;
     position: relative;
 }
 
-body .header .nav .mainNav a:hover{
+body .header .nav .mainNav a:hover {
     color: #d7dad9;
 }
 
-body .header .nav .mainNav a::after{
+body .header .nav .mainNav a::after {
     content: '';
     position: absolute;
     width: 0px;
@@ -104,3 +111,15 @@ body .header .nav .mainNav a::after{
     background: #0c0c2a44;
 }
 
+/* home banner image*/
+body .homeBanner {
+    display: block;
+    position: absolute;
+}
+
+/* product banner image */
+body .header .nav .productBanner {
+    display: block;
+    width: fit-content;
+    height: auto;
+}
