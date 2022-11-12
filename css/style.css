@@ -106,91 +106,11 @@ body .header .nav .mainNav a::after {
     background: #0c0c2a44;
 }
 
-/* home banner image*/
-body .homeBanner {
-    display: block;
-    position: absolute;
-}
-
-/* product banner image */
-body .header .nav .productBanner {
-    display: block;
-    width: fit-content;
-    height: auto;
-}
- 
-/* carousel container */
-body .carousel-container {
-    display: inline-block;
-    width: 1280px;
-    height: 750px;
-    position: center;
-    overflow: hidden;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+/* home banner carousel tagline*/
+body .tagline {
+    display: flex;
+    float: inline-end;
+    position: relative;
     color: #003399;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-     left: 0;
-     border-radius: 0%;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgb(243,147,0.6);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #f39322;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
+    background-color: rgba(240, 131, 7, 0.856);
 }
