@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,6 +8,8 @@ body {
     font-family: 'Montserrat';
     font-size: 18px;
     margin: 0px;
+    color: #fff !important;
+    background-color: #252525 !important;
 }
 
 body .header {
@@ -50,12 +52,14 @@ body .header .nav .searchArea button {
 
 body .header .nav .contactNav {
     padding: 10px 0;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #252525;
     display: inline-block;
 }
 
 body .header .nav .contactNav a {
-    color: #003399;
+    /*color: #003399;*/
+    color: #fff;
     text-decoration: none;
     margin-left: 20px;
 
