@@ -100,6 +100,21 @@
                 </div>
               </div>
         </div>
+        <div class="modal fade rounded" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Please Wait</h5>
+                  </div>
+                  <div class="modal-body" style="font-size:large;" id="WarningModalBody">                                      
+
+                  </div>            
+                  <div class="modal-footer">
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script>
             $(document).ready(()=>{
@@ -110,6 +125,9 @@
                     });
                 });
             })
+            function openReserve(){
+              $("#ReserveModal").modal('show');
+            }
         </script>
     </body>
 </html>
