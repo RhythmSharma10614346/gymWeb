@@ -1,12 +1,13 @@
 * {
+    border: 0;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Montserrat';
-    font-size: 18px;
+    font-family: 'Montserrat' !important;
+    font-size: 20px !important;
     margin: 0px;
     color: #fff !important;
     background-color: #252525 !important;
@@ -14,52 +15,56 @@ body {
 
 body .header {
     display: flex;
-    margin-left: 5%;
-    top: 5%;
-    width: 95%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px 0px 70px 0px;
+    width: 100%;
+    height: 7vh;
 }
 
 body .header .logo {
     display: inline-block;
-    width: 25%;
+    justify-content: flex-start;
+    width: 20%;
+    height: 80px;
 }
 
 body .header .nav {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
     width: 75%;
-    align-content:center;
+    align-content: justify;
 }
 
 
 body .header .nav .searchArea input {
-    height: 42px;
-    width: 300px;
+    height: 40px;
+    width: 280px;
     border-radius: 5px;
     border: 3px solid #f39322;
-    padding: 5 20px;    
+    padding: 10px 20px;
 }
 
 body .header .nav .searchArea button {
     background: #f39322;
     border: 1px solid #f39322;
-    color: white;
-    height: 42px;
-    width: 120px;
+    color: #003399;
+    font-weight: bold;
+    font-size: medium;
+    height: 40px;
+    width: 100px;
     border-radius: 5px;
-    padding: 0 20px;
+    padding: 5 5px;
 }
 
 body .header .nav .contactNav {
-    padding: 10px 0;
-    /* background-color: white; */
-    background-color: #252525;
-    display: inline-block;
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: row;
 }
 
 body .header .nav .contactNav a {
-    /*color: #003399;*/
-    color: #fff;
+    color: #f39322;
     text-decoration: none;
     margin-left: 20px;
 
@@ -69,9 +74,8 @@ body .header .nav .contactNav a::after {
     content: '';
     width: 0px;
     background: #003399;
-    display: inline-block;
-    height: 100%;
-    right: -11px;
+    display: block;
+    height: 80%;
     position: absolute;
 }
 
@@ -84,11 +88,14 @@ body .header .nav .contactNav a:last-child::after {
 }
 
 body .header .nav .mainNav {
-    padding: 10px 0;
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 body .header .nav .mainNav a {
-    color: #003399;
+    color: #f39322;
     margin: 0 20px;
     padding: 10px 0;
     text-decoration: none;
@@ -96,23 +103,132 @@ body .header .nav .mainNav a {
 }
 
 body .header .nav .mainNav a:hover {
-    color: #d7dad9;
+    color: #003399;
 }
 
 body .header .nav .mainNav a::after {
     content: '';
-    position: absolute;
     width: 0px;
-    right: -18px;
-    height: 100%;
-    top: 0px;
-    display: inline-block;
+    right: 0px;
     background: #0c0c2a44;
 }
 
 /* home banner carousel tagline*/
-body .tagline {
-    display: block;
-    color: #003399;
-    background-color: rgba(240, 131, 7, 0.856);
+
+
+.banner {
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    width: 100%;
+    height: 25vh;
+    /*viewport height*/
+    background-color: #252525;
+    margin-block: 15%;
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    background: #252525;
+    border-radius: 70px;
+    padding: 25px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer{
+    display: grid;
+    height: 300px;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    background-color: #252525;
+    gap: 10px;
+}
+
+.footer .legal{
+    text-align: center;
+    color:#fff;
+    text-transform: none;
+
+}
+
+.footer .legal:hover {
+    color:#f39322;
+    text-decoration: none;
+}
+
+.footer .content{
+    text-align: center;
+    color:#fff;
+    text-transform: none;
+
+}
+
+.footer .content:hover {
+    color:#f39322;
+    text-decoration: none;
+}
+
+.footer .social {
+    text-align: center;
+    color:#fff;
+    text-transform: none;
+
+}
+
+.footer .social:hover {
+    color:#f39322;
+    text-decoration: none;
+}
+/* adding Social icons with fontawesome */
+
+footer .fa {
+        padding: 25px;
+        font-size: 30px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        margin: 8px 5px;
+}
+footer .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+    
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+footer .rights {
+    text-align: center;
+    color:#fff;
+    font-style: italic;
+}
+
+footer .rights:hover {
+    color:#003399;
+    text-decoration: none;
 }

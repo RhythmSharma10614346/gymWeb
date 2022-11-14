@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -26,86 +29,159 @@
 
         <!--Navigation-->
         <div class="nav">
-            <div class="contactNav">
-                <a href="#">info@progym.com</a>
-                <a href="#">894261084</a>
-            </div>
-            <div class="searchArea">
-                <input placeholder="Search">
-                <button>Search</button>
-            </div>
             <div class="mainNav">
                 <a href="#">Home</a>
                 <a href="./allproducts.html">Products</a>
             </div>
+
+            <!--
+            <div class="contactNav">
+                <a href="#">info@progym.com</a>
+                <a href="#">894261084</a>
+            </div> -->
+            <div class="searchArea">
+                <input placeholder="Search">
+                <button>Search</button>
+            </div>
+
         </div>
     </div>
 
-    <!-- Adding H1 tagline for promotion -->
-    <div class="tagline">
-        <h1>
-            <marquee direction="right" behaviour="alternate"> We deal with the best gym equipments </marquee>
-        </h1>
-    </div>
     <!--Banner image-->
-    <div>
-        <video width="100%" height="80%">
-            <source src="./media/gym.mp4" type="video/mp4">
-        </video>
-    </div>
 
-    <!-- Adding a carousel--
-       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        !-- Wrapper for slides --
-        <div class="carousel-inner">
-            <div class="item active" style="width:100%">
-                <img src="./media/carousel1.png" width="100%" alt="we have the best gym products">
-            </div>
-            <div class="item" style="width:100%">
-                <img src="./media/carousel2.png" alt="we have the best gym products">
-            </div>
-
-            <div class="item" style="width:100%">
-                <img src="./media/carousel3.png." alt="we have the best gym products">
-            <div class="item active" style="width:100%">
-                <img src="./media/carousel1.png" alt="we have the best gym products">
-            </div>
-            <div class="item" style="width:100%">
-                <img src="./media/carousel3.png" width="100%" alt="we have the best gym products">            
+    <div class="banner">
+        <div class="tagline">
+            <h1>Welcome to ProGym<br>
+                We have exciting deals on products and membership.</h1>
         </div>
 
+        <!-- Adding a carousel-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <!-- New Product Grid -->
-        <div class="container-fluid bg-3 text-center">
-            <h3 class="margin">New products launching soon</h3><br>
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.</p>
-                    <img src="./media/new1.png" class="img-responsive margin" style="width:100%"
-                        alt="Dumbells promotion image">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" style="width: 100%">
+                    <img src="./media/carousel1.png" alt="we have the best gym products">
                 </div>
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.</p>
-                    <img src="./media/new2.png" class="img-responsive margin" style="width:100%"
-                        alt="Dumbells promotion image">
+                <div class="item" style="width: 100%">
+                    <img src="./media/carousel2.png" alt="we have the best gym products">
                 </div>
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.</p>
-                    <img src="./media/new3.png" class="img-responsive margin" style="width:100%"
-                        alt="Dumbells promotion image">
+                <div class="item" style="width: 100%" padding="0px 0px">
+                    <img src="./media/carousel3.png" alt="we have the best gym products">
                 </div>
             </div>
         </div>
     </div>
+    <br>
 
 
 
+    <!-- New Product Grid -->
+    <div class="container-fluid bg-3 text-center">
+        <h2 class="margin">New products launching soon</h2><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua.</p>
+                <img src="./media/new1.png" class="img-responsive margin" style="width:100%"
+                    alt="Dumbells promotion image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua.</p>
+                <img src="./media/new2.png" class="img-responsive margin" style="width:100%"
+                    alt="Dumbells promotion image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua.</p>
+                <img src="./media/new3.png" class="img-responsive margin" style="width:100%"
+                    alt="Dumbells promotion image">
+            </div>
+        </div>
+    </div><br><br>
+
+    <!-- Product on sale Grid -->
+    <div class="container-fluid bg-3 text-center">
+        <h2 class="margin">Products on Sale</h2><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua.</p>
+                <img src="./media/new1.png" class="img-responsive margin" style="width:100%"
+                    alt="Dumbells promotion image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua.</p>
+                <img src="./media/new2.png" class="img-responsive margin" style="width:100%"
+                    alt="Dumbells promotion image">
+            </div>
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua.</p>
+                <img src="./media/new3.png" class="img-responsive margin" style="width:100%"
+                    alt="Dumbells promotion image">
+            </div>
+        </div>
+    </div><br><br>
+
+
+    </div>
+    <div class="footer">
+        <div class="legal">
+            <h4>LEGAL</h4>
+            <br>
+            <a href="#">Privacy policy</a>
+            <br>
+            <a href="#">Term and Conditions</a>
+            <br>
+            <a href="#">Cookies</a>
+            <br>
+            <a href="#">Copyrights</a>
+        </div>
+        <div class="content">
+            <h4>CONTENT</h4>
+            <br>
+            <a href="#">Products</a>
+            <br>
+            <a href="#">Membership</a>
+            <br>
+            <a href="#">Personal Trainer</a>
+            <br>
+            <a href="#">Supplements</a>
+        </div>
+        <div class="social">
+            <h4>SOCIAL</h4>
+            <br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <br>
+            <p>Address</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="rights">
+            <a href="10614346 & 10611964"> ® All Rights Reserved</a>
+        </div>
+    </footer>
 
 </body>
 
