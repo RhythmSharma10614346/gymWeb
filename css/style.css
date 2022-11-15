@@ -59,12 +59,25 @@ body .nav-link:hover {
     background-color: #252525;
 }
 
-body .header .nav .searchArea input {
+.searchArea {
     height: 40px;
-    width: 10px;
+    width: 180px !important;
     border-radius: 5px;
     border: 3px solid #f39322;
     padding: 10px 20px;
+}
+
+@media (min-width: 768px){
+#navbarGym{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    }
+}
+@media (min-width: 768px){
+.searchForm{
+padding-left: 2rem;
+}
 }
 
 body .header .nav .searchArea button {
@@ -297,4 +310,21 @@ body .product-collection {
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 200px 30px;
+}
+
+.product-icon{
+    border: #fff 3px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.product-icon :first-child{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+.product-icon :last-child{
+    margin-left: 5px;    
+    margin-right: 0px;
+}
+.prod-spec{
+    font-size: 1.75rem;
 }
