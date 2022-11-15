@@ -7,10 +7,11 @@
 
 body {
     font-family: 'Montserrat' !important;
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     margin: 0px;
     color: #fff !important;
     background-color: #252525 !important;
+
 }
 
 body .header {
@@ -36,19 +37,25 @@ body .header .nav {
     align-content: justify;
 }
 
-body .navbar{
-width: 100%;
+body .navbar {
+    width: 100%;
 }
 
-body .searchBtn{
+body .searchBtn {
     background: #f39322;
-    color: #fff;   
-}
-body .nav-link{
-    color:#fff !important;
+    color: #fff;
 }
 
-.navbar .bg-dark{
+body .nav-link {
+    color: #f39322 !important;
+}
+
+body .nav-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .bg-dark {
     background-color: #252525;
 }
 
@@ -146,15 +153,25 @@ body .header .nav .mainNav a::after {
 }
 
 h1 {
-    font-size: 50px;
-    background: #252525;
+    font-size: 70px;
     border-radius: 70px;
     padding: 25px 10px;
     text-align: center;
     color: #fff;
 }
 
-.footer{
+h2 .margin {
+    font-size: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5%;
+}
+h2 .margin:hover {
+    text-shadow: #f39322;
+    color: #003399;
+}
+
+.footer {
     display: grid;
     height: 300px;
     align-content: space-evenly;
@@ -163,51 +180,53 @@ h1 {
     gap: 10px;
 }
 
-.footer .legal{
+.footer .legal {
     text-align: center;
-    color:#fff;
+    color: #fff;
     text-transform: none;
 
 }
 
 .footer .legal:hover {
-    color:#f39322;
+    color: #f39322;
     text-decoration: none;
 }
 
-.footer .content{
+.footer .content {
     text-align: center;
-    color:#fff;
+    color: #fff;
     text-transform: none;
 
 }
 
 .footer .content:hover {
-    color:#f39322;
+    color: #f39322;
     text-decoration: none;
 }
 
 .footer .social {
     text-align: center;
-    color:#fff;
+    color: #fff;
     text-transform: none;
 
 }
 
 .footer .social:hover {
-    color:#f39322;
+    color: #f39322;
     text-decoration: none;
 }
+
 /* adding Social icons with fontawesome */
 
 footer .fa {
-        padding: 25px;
-        font-size: 30px;
-        width: 40px;
-        text-align: center;
-        text-decoration: none;
-        margin: 8px 5px;
+    padding: 25px;
+    font-size: 50px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
 }
+
 footer .fa:hover {
     opacity: 0.7;
 }
@@ -215,43 +234,67 @@ footer .fa:hover {
 .fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  
-  .fa-twitter {
+}
+
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }
-   
-  .fa-linkedin {
+}
+
+.fa-linkedin {
     background: #007bb5;
     color: white;
-  }
-    
-  .fa-instagram {
+}
+
+.fa-instagram {
     background: #125688;
     color: white;
-  }
-  
-  .fa-pinterest {
+}
+
+.fa-pinterest {
     background: #cb2027;
     color: white;
-  }
+}
 
 footer .rights {
     text-align: center;
-    color:#fff;
+    color: #fff;
     font-style: italic;
 }
 
 footer .rights:hover {
-    color:#003399;
+    color: #003399;
     text-decoration: none;
 }
-.modal-content{
+
+.modal-content {
     background-color: #252525 !important;
-    
+
 }
-.modal-dialog{
+
+.modal-dialog {
     border-color: #fff;
     border-width: 1rem;
+}
+
+body .productBanner {
+    display: grid;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    justify-content: center;
+    background-position: 100%;
+
+
+}
+
+body .product-collection {
+    position: absolute;
+    background: #f391228f;
+    justify-content: center;
+    left: 40px;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 200px 30px;
 }
