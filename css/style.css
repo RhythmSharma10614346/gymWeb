@@ -284,3 +284,43 @@ footer .rights:hover {
 .prod-spec{
     font-size: 1.75rem;
 }
+
+#ReserveModal{
+    opacity: 100%;
+    background-color:rgba(0, 0, 0, 0.5)
+}
+.btn-gym{
+    background-color:#f39322 !important; 
+    color: #fff !important;
+    border-radius: 25%;
+}
+
+#ReserveModal input{
+    height: 35px;
+    font-size: 1.75rem;
+    background-color: #666666;
+    border: #f39322 solid 1px;
+    color: #fff!important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#ReserveModal input:first-child{
+    height: 35px;
+    background-color: #666666;
+    border: #f39322 solid 1px;
+    color: #fff!important;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#ReserveModal input:last-child{
+    height: 35px;
+    background-color: #666666;
+    border: #f39322 solid 1px;
+    color: #fff!important;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#ReserveModal input::placeholder{
+    color: #fff!important;
+    opacity: 0.75;
+}

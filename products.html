@@ -61,7 +61,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-gym">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Special title treatment</h5>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-gym">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-gym">Go somewhere</a>
                   </div>
                 </div>
               </div>
@@ -88,22 +88,27 @@
                   <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-gym">Go somewhere</a>
                   </div>
                 </div>
               </div>
         </div>
-        <div class="modal fade rounded" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+        <div class="modal fade" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="ReserveModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                   <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Please Wait</h5>
+                      <h4 class="modal-title" id="ReserveModalLabel">Reserve your product</h4>
                   </div>
-                  <div class="modal-body" style="font-size:large;" id="WarningModalBody">                                      
-
+                  <div class="modal-body" id="ReserveModalBody">                                      
+                    <form>
+                      <input class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="First Name ...">
+                      <input class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="Last Name ...">
+                      <input class="w-100 rounded mt-2" type="email" autocomplete="off" placeholder="Email ...">
+                      <input class="w-100 rounded mt-2" type="tel" autocomplete="off" placeholder="Contact Number ...">                      
+                    </form>
                   </div>            
                   <div class="modal-footer">
-                      
+                      <button class="btn btn-gym" onclick="ReserveComplete()"> Submit Details </button>
                   </div>
               </div>
           </div>
@@ -129,7 +134,7 @@
                           '<li class="prod-spec">'+Prod.Spec3+'</li> '+
                           '</ul>'+
                           '<div>'+
-                          '<button class="btn btn-primary" type="submit" onclick="openReserve()"  > Reserve Product </button>'+
+                          '<button class="btn btn-gym" type="submit" onclick="openReserve()"  > Reserve Product </button>'+
                           '</div>')
                           $('#mainImg').attr("src",Prod.ImgURL1)
                           $('.img-container').append('<img class="product-img" src='+Prod.ImgURL1+' id="mainImg" height="415" alt="product"> '+
@@ -143,7 +148,7 @@
                         }
                     });
                 });
-            })
+            });
             function openReserve(){
               $("#ReserveModal").modal('show');
             }
