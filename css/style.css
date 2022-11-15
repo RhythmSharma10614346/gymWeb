@@ -166,7 +166,7 @@ body .header .nav .mainNav a::after {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 80px;
     border-radius: 70px;
     padding: 25px 10px;
     text-align: center;
@@ -224,10 +224,15 @@ h2 .margin:hover {
 
 }
 
-.footer .social:hover {
+.footer .contact-details:hover{
     color: #f39322;
     text-decoration: none;
 }
+ footer .h3 {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.5;
+ }
 
 /* adding Social icons with fontawesome */
 
@@ -276,7 +281,7 @@ footer .rights {
 }
 
 footer .rights:hover {
-    color: #003399;
+    color: #e8eaed;
     text-decoration: none;
 }
 
