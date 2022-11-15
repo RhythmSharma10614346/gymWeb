@@ -15,16 +15,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Fontawesome icons-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
+    <!--Bootstarp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!--Header Section-->    
+    <!--Header Section-->
     <div class="sticky-top">
-          <nav class="navbar  navbar-expand-lg bg-dark ">
+        <nav class="navbar  navbar-expand-lg bg-dark ">
             <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="50px"
+                        alt="Pro Gym Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym"
+                    aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarGym">
+                    <ul class="navbar-nav me-auto justify-content-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./allproducts.html">Products</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex searchArea">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search products (Type 3 characters min.) " aria-label="Search">
+                    </form>
+                </div>
               <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="40px" alt="Pro Gym Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym" aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,8 +69,8 @@
                 </form>
               </div>
             </div>
-          </nav>      
-        </div>   
+        </nav>
+    </div>
     <!--Banner image-->
 
     <div class="banner">
@@ -71,72 +97,73 @@
         </div>
     </div>
     <br>
+    <!--About Us-->
+    <div class="container-fluid bg-5 text-center">
+        <p><b>About us </b></p>
+        <br>
+        <p>ProGym plans to give the top tier client experience while giving quality hardware at a reasonable expense.
+            Situated in Ireland, we supply exercise centers, relaxation focuses, lodgings, schools, neighborhood
+            specialists and clubs Across the country.</p>
+        <br>
+        <p> Our cordial staff guarantee our clients each get a custom fitted arrangement and an individual help. We
+            stock and supply driving brands numerous with broad guarantee periods.</p>
+    </div><br>
+
 
 
 
     <!-- New Product Grid -->
     <div class="container-fluid bg-3 text-center">
-        <h2 class="margin">New products launching soon</h2><br>
+        <p class="margin" style="font: size 3rem;"><b>New products launching soon</b></p><br>
         <div class="row">
             <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore
-                    et dolore magna aliqua.</p>
+                <h2>Metalic Finish</h2>
                 <img src="./media/new1.png" class="img-responsive margin" style="width:100%"
                     alt="Dumbells promotion image">
-            </div>
+            </div><br>
             <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore
-                    et dolore magna aliqua.</p>
+                <h2>Ceremic</h2>
                 <img src="./media/new2.png" class="img-responsive margin" style="width:100%"
                     alt="Dumbells promotion image">
-            </div>
+            </div><br>
             <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore
-                    et dolore magna aliqua.</p>
+                <h2>Colourfull Range</h2>
                 <img src="./media/new3.png" class="img-responsive margin" style="width:100%"
                     alt="Dumbells promotion image">
-            </div>
+            </div><br>
         </div>
-    </div><br><br>
+    </div><br>
 
     <!-- Product on sale Grid -->
     <div class="container-fluid bg-3 text-center">
-        <h2 class="margin">Products on Sale</h2><br>
+        <p class="margin">Products on Discount upto 40%</p><br>
         <div class="row">
-            <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore
-                    et dolore magna aliqua.</p>
-                <img src="./media/new1.png" class="img-responsive margin" style="width:100%"
-                    alt="Dumbells promotion image">
-            </div>
-            <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore
-                    et dolore magna aliqua.</p>
-                <img src="./media/new2.png" class="img-responsive margin" style="width:100%"
-                    alt="Dumbells promotion image">
-            </div>
-            <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore
-                    et dolore magna aliqua.</p>
-                <img src="./media/new3.png" class="img-responsive margin" style="width:100%"
-                    alt="Dumbells promotion image">
-            </div>
+
+            <div class="col-sm-3">
+                <h2>Yoga Mat</h2>
+                <img src="./media/5.png" class="img-responsive margin" style="width:90%" alt="YogaMat">
+            </div><br>
+
+
+            <div class="col-sm-3">
+                <h2>Shakers</h2>
+                <img src="./media/13.png" class="img-responsive margin" style="width:90%" alt="Shakers">
+            </div><br>
+
+
+            <div class="col-sm-3">
+                <h2>BCAA Supplement</h2>
+                <img src="./media/12.png" class="img-responsive margin" style="width:90%" alt="BCAA">
+            </div><br>
+
+            <div class="col-sm-3">
+                <h2>Dumbells 2kg</h2>
+                <img src="./media/11.png" class="img-responsive margin" style="width:90%" alt="Dumbells">
+            </div><br>
         </div>
     </div><br><br>
 
-
+    <!--Footer-->
     </div>
     <div class="footer">
         <div class="legal">

@@ -1,4 +1,5 @@
 <html>
+
     <head>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -112,7 +113,25 @@
                   </div>
               </div>
           </div>
-      </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(() => {
+      var search = document.location.search;
+      $.getJSON('./prodDetails.json', (data) => {
+        data.forEach((Prod) => {
+          console.log(Prod.id)
+        });
+      });
+    })
+    function openReserve() {
+      $("#ReserveModal").modal('show');
+    }
+  </script>
+</body>
+
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script>
             $(document).ready(()=>{
