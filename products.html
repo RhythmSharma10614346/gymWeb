@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarGym">
               <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./allproducts.html">Products</a>
@@ -51,11 +51,10 @@
                     <div class="info-container">
                                              
                     </div>
-                </div>
-                
+                </div>                
             </div>            
         </div>
-        <div style="height: 10rem;" ></div>
+        <div style="height: 10rem;"></div>
         <div class="ProdLine">
             <div class="col-sm-12 col-lg-3 ">
               <div class="card">
@@ -125,13 +124,14 @@
           console.log(Prod.id)
         });
       });
-    })
+    });    
     function openReserve() {
       $("#ReserveModal").modal('show');
+    };
+    function ReserveComplete(){
+      $("#ReserveModal").modal('hide');
     }
   </script>
-</body>
-
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script>
             $(document).ready(()=>{
@@ -167,10 +167,7 @@
                         }
                     });
                 });
-            });
-            function openReserve(){
-              $("#ReserveModal").modal('show');
-            }
+            });          
         </script>
     </body>
 </html>
