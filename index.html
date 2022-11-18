@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Pro Gym
+        ProGym
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -25,128 +25,158 @@
 
 <body>
     <!--Header Section-->
-    <div class="container">
-        <div class="navBar">
-            <img src="./media/logo.png" class="logo" alt="ProGym Logo">
-                <nav>
-                    <ul>
-                        <input type="text" placeholder="Search">
-
-                        <li><a href="#">Home</a></li>
-                        <li><a href="allproduct.html">Products</a></li>
-                        <li><a href="#">Membership</a></li>
+    <div class="sticky-top">
+        <nav class="navbar  navbar-expand-lg bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="50px"
+                        alt="Pro Gym Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym"
+                    aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarGym">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./allproducts.html">Products</a>
+                        </li>
                     </ul>
-            <img src="./media/menu.png" class="menu-icon" onclick="togglemenu()" alt="menu icon">
-        </div>
-     </div>   
-    <!--Banner image-->
-
-    <div class="banner">
-        <div class="tagline">
-            <h1>Welcome to ProGym<br>
-                We have exciting deals on products and membership.</h1>
-        </div>
-
-        <!-- Adding a carousel-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active" style="width: 100%">
-                    <img src="./media/carousel1.png" alt="we have the best gym products">
-                </div>
-                <div class="item" style="width: 100%">
-                    <img src="./media/carousel2.png" alt="we have the best gym products">
-                </div>
-                <div class="item" style="width: 100%" padding="0px 0px">
-                    <img src="./media/carousel3.png" alt="we have the best gym products">
+                    <form class="d-flex searchArea">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search products (Type 3 characters min.) " aria-label="Search">
+                    </form>
                 </div>
             </div>
-        </div>
-    </div>
-    <br>
-    <!--About Us-->
-    <div class="container-fluid bg-5 text-center">
-        <p><b>About us </b></p>
-        <br>
-        <p>ProGym plans to give the top tier client experience while giving quality hardware at a reasonable expense.
-            Situated in Ireland, we supply exercise centers, relaxation focuses, lodgings, schools, neighborhood
-            specialists and clubs Across the country.</p>
-        <br>
-        <p> Our cordial staff guarantee our clients each get a custom fitted arrangement and an individual help. We
-            stock and supply driving brands numerous with broad guarantee periods.</p>
-    </div><br>
+        </nav>
+    </div>    
+            <!--Banner image-->
 
+            <div class="banner">
+                <div class="tagline">
+                    <h1>Welcome to ProGym<br>
+                        We have exciting deals on products and membership.</h1>
+                </div>
 
+                <!-- Adding a carousel-->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-
-    <!-- New Product Grid -->
-    <div class="container-fluid bg-3 text-center">
-        <p class="margin" style="font: size 3rem;"><b>New products launching soon</b></p><br>
-        <div class="row">
-            <div class="col-sm-4">
-                <h2>Metalic Finish</h2>
-                <img src="./media/new1.png" class="img-responsive margin" style="width:100%"
-                    alt="Dumbells promotion image">
-            </div><br>
-            <div class="col-sm-4">
-                <h2>Ceremic</h2>
-                <img src="./media/new2.png" class="img-responsive margin" style="width:100%"
-                    alt="Dumbells promotion image">
-            </div><br>
-            <div class="col-sm-4">
-                <h2>Colourfull Range</h2>
-                <img src="./media/new3.png" class="img-responsive margin" style="width:100%"
-                    alt="Dumbells promotion image">
-            </div><br>
-        </div>
-    </div><br>
-
-    <!-- Product on sale Grid -->
-    <div class="container-fluid bg-3 text-center">
-        <p class="margin">Products on Discount upto 40%</p><br>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <h2>Yoga Mat</h2>
-                <img src="./media/5.png" class="img-responsive margin" style="width:90%" alt="YogaMat">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" style="width: 100%">
+                            <img src="./media/carousel1.png" alt="we have the best gym products">
+                        </div>
+                        <div class="item" style="width: 100%">
+                            <img src="./media/carousel2.png" alt="we have the best gym products">
+                        </div>
+                        <div class="item" style="width: 100%" padding="0px 0px">
+                            <img src="./media/carousel3.png" alt="we have the best gym products">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--About Us-->
+            <div class="container-fluid bg-6 text-center">
+                <p><b>About us </b></p>
+                <br>
+                <p>ProGym plans to give the top tier client experience while giving quality hardware at a reasonable
+                    expense.
+                    Situated in Ireland, we supply exercise centers, relaxation focuses, lodgings, schools, neighborhood
+                    specialists and clubs Across the country.</p>
+                <br>
+                <p> Our cordial staff guarantee our clients each get a custom fitted arrangement and an individual help.
+                    We
+                    stock and supply driving brands numerous with broad guarantee periods.</p>
             </div><br>
 
 
-            <div class="col-sm-3">
-                <h2>Shakers</h2>
-                <img src="./media/13.png" class="img-responsive margin" style="width:90%" alt="Shakers">
+
+
+            <!-- New Product Grid -->
+            <div class="container-fluid bg-3 text-center">
+                <p class="margin" style="font: size 3rem;"><b>New products launching soon</b></p><br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Metalic Finish</h2>
+                        <img src="./media/new1.png" class="img-responsive margin" style="width:100%"
+                            alt="Dumbells promotion image">
+                    </div><br>
+                    <div class="col-sm-4">
+                        <h2>Ceremic</h2>
+                        <img src="./media/new2.png" class="img-responsive margin" style="width:100%"
+                            alt="Dumbells promotion image">
+                    </div><br>
+                    <div class="col-sm-4">
+                        <h2>Colourfull Range</h2>
+                        <img src="./media/new3.png" class="img-responsive margin" style="width:100%"
+                            alt="Dumbells promotion image">
+                    </div><br>
+                </div>
             </div><br>
 
+            <!-- Product on sale Grid -->
+            <div class="container-fluid bg-3 text-center">
+                <p class="margin">Products on Discount upto 40%</p><br>
+                <div class="row">
 
-            <div class="col-sm-3">
-                <h2>BCAA Supplement</h2>
-                <img src="./media/12.png" class="img-responsive margin" style="width:90%" alt="BCAA">
-            </div><br>
+                    <div class="col-sm-3">
+                        <h2>Yoga Mat</h2>
+                        <img src="./media/5.png" class="img-responsive margin" style="width:90%" alt="YogaMat">
+                    </div><br>
 
-            <div class="col-sm-3">
-                <h2>Dumbells 2kg</h2>
-                <img src="./media/11.png" class="img-responsive margin" style="width:90%" alt="Dumbells">
-            </div><br>
-        </div>
-    </div><br><br>
 
-    <!--Footer-->
+                    <div class="col-sm-3">
+                        <h2>Shakers</h2>
+                        <img src="./media/13.png" class="img-responsive margin" style="width:90%" alt="Shakers">
+                    </div><br>
+
+
+                    <div class="col-sm-3">
+                        <h2>BCAA Supplement</h2>
+                        <img src="./media/12.png" class="img-responsive margin" style="width:90%" alt="BCAA">
+                    </div><br>
+
+                    <div class="col-sm-3">
+                        <h2>Dumbells 2kg</h2>
+                        <img src="./media/11.png" class="img-responsive margin" style="width:90%" alt="Dumbells">
+                    </div><br>
+                </div>
+            </div><br><br>
+
+            <!--Footer-->
     </div>
     <div class="footer">
         <div class="legal">
             <p>LEGAL</p>
-            <a href="#"><h3>Privacy policy</h3></a>
-            <a href="#"><h3>Term and Conditions</h3></a>
-            <a href="#"><h3>Cookies</h3></a>
-            <a href="#"><h3>Copyrights</h3></a>
+            <a href="#">
+                <h3>Privacy policy</h3>
+            </a>
+            <a href="#">
+                <h3>Term and Conditions</h3>
+            </a>
+            <a href="#">
+                <h3>Cookies</h3>
+            </a>
+            <a href="#">
+                <h3>Copyrights</h3>
+            </a>
         </div>
         <div class="content">
             <p>CONTENT</p>
-            <a href="#"><h3>Products</h3></a>
-            <a href="#"><h3>Membership</h3></a>
-            <a href="#"><h3>Personal Trainer</h3></a>
-            <a href="#"><h3>Supplements</h3></a>
+            <a href="#">
+                <h3>Products</h3>
+            </a>
+            <a href="#">
+                <h3>Membership</h3>
+            </a>
+            <a href="#">
+                <h3>Personal Trainer</h3>
+            </a>
+            <a href="#">
+                <h3>Supplements</h3>
+            </a>
         </div>
         <div class="social">
             <p>Follow</p>
