@@ -25,11 +25,11 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="script.js"></script>
+      
     </head>
     <body>
       <div class="sticky-top">
-        <nav class="navbar  navbar-expand-lg bg-dark ">
+        <!-- <nav class="navbar navbar-expand-lg bg-dark ">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="40px" alt="Pro Gym Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym" aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,16 @@
               </form>
             </div>
           </div>
-        </nav>      
+        </nav>       -->
+        <div class="topnav" id="myTopnav">
+          <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
+          <a class="" aria-current="page" href="./index.html">Home</a>
+          <a class="" href="#">Products</a>
+          <input class="search-bar" type="search" placeholder="Search products (Type 3 characters min.) " aria-label="Search">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
       </div>           
        
   <!--Banner Section-->
@@ -62,44 +71,9 @@
   </div>
 
   <!-- Containers for products-->
-  <div style="height: 10rem;">
-    <div class="row">
-      <div class="col-sm-12 col-lg-3 col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Ab-Wheel</h5>
-            <img src="./media/ab-wheel.png" width="90%" alt="ab-wheel">
-            <a href="./products.html?id=8" class="btn btn-primary">More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-lg-3 col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Dumbells</h5>
-            <img src="./media/11.png" width="90%" alt="dumbells">
-            <a href="" class="btn btn-primary">More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-lg-3 col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Ball</h5>
-            <img src="./media/7.png" width="90%" alt="Exercise ball">
-            <a href="" class="btn btn-primary">More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-lg-3 col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Yoga Mat</h5>
-            <img src="./media/6.png" width="90%" alt="Yoga Mat">
-            <a href="" class="btn btn-primary">More</a>
-          </div>
-        </div>
-      </div>
+  
+    <div class="row" id="allProducts">
+    </div>
       <!--
     <div class="col-sm-12 col-lg-3 col-md-3">
       <div class="card">
@@ -120,7 +94,7 @@
       </div>
     </div></div>
     -->
-    </div>
+    
     <br>
   
 
@@ -167,7 +141,7 @@
       <a href="10614346 & 10611964"> ® All Rights Reserved</a>
     </div>
   </footer>
-
+  <script src="./jscript/allProducts.js"></script>
 </body>
 
 </html>

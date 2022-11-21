@@ -13,11 +13,11 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="script.js"></script>
+      <script src="./jscript/script.js"></script>
     </head>
     <body>
       <div class="sticky-top">
-        <nav class="navbar  navbar-expand-lg bg-dark ">
+        <!-- <nav class="navbar  navbar-expand-lg bg-dark ">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="40px" alt="Pro Gym Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym" aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,16 @@
               </form>
             </div>
           </div>
-        </nav>      
+        </nav>       -->
+        <div class="topnav" id="myTopnav">
+          <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
+          <a class="" aria-current="page" href="./index.html">Home</a>
+          <a class="" href="./allproducts.html">Products</a>
+          <input class="search-bar" type="search" placeholder="Search products (Type 3 characters min.) " aria-label="Search">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
       </div>            
         <div class="product-container">
             <div class="row">
@@ -55,43 +64,7 @@
             </div>            
         </div>
         <div style="height: 10rem;"></div>
-        <div class="ProdLine">
-            <div class="col-sm-12 col-lg-3 ">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-gym">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-3 ">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-gym">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-gym">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-lg-3 ">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-gym">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
+        <div class="ProdLine">            
         </div>
         <div class="modal fade" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="ReserveModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
@@ -114,60 +87,7 @@
           </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(() => {
-      var search = document.location.search;
-      $.getJSON('./prodDetails.json', (data) => {
-        data.forEach((Prod) => {
-          console.log(Prod.id)
-        });
-      });
-    });    
-    function openReserve() {
-      $("#ReserveModal").modal('show');
-    };
-    function ReserveComplete(){
-      $("#ReserveModal").modal('hide');
-    }
-  </script>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(()=>{
-              var type;
-              var pathname = window.location.search;
-              type = pathname.split('=')[1];              
-              var search = document.location.search;
-                $.getJSON('./prodDetails.json', (data)=>{
-                    data.forEach((Prod)=>{
-                        if(search.indexOf(Prod.id) != -1 && Prod.id == type){
-                          $('.info-container').append('<h2>'+Prod.Name+'</h2>'+
-                          '<h1> </h1>'+
-                          '<hr>'+
-                          '<h4>Product Ratings</h4>'+
-                          '<h3>Price : € '+Prod.Rate+'</h3>'+
-                          '<ul>    '+
-                          '<li class="prod-spec">'+Prod.Spec1+'</li> '+
-                          '<li class="prod-spec">'+Prod.Spec2+'</li> '+
-                          '<li class="prod-spec">'+Prod.Spec3+'</li> '+
-                          '</ul>'+
-                          '<div>'+
-                          '<button class="btn btn-gym" type="submit" onclick="openReserve()"  > Reserve Product </button>'+
-                          '</div>')
-                          $('#mainImg').attr("src",Prod.ImgURL1)
-                          $('.img-container').append('<img class="product-img" src='+Prod.ImgURL1+' id="mainImg" height="415" alt="product"> '+
-                          '<br>'+
-                          '<div style="height: 1rem;" ></div>'+
-                          '<img class="product-icon" src='+Prod.ImgURL1+' height="100" alt="icon" onclick="changeMainImg('+'1'+')">'+
-                          '<img class="product-icon" src='+Prod.ImgURL2+' height="100" alt="icon" onclick="changeMainImg('+'2'+')">'+
-                          '<img class="product-icon" src='+Prod.ImgURL3+' height="100" alt="icon" onclick="changeMainImg('+'3'+')">'+
-                          '<img class="product-icon" src='+Prod.ImgURL4+' height="100" alt="icon" onclick="changeMainImg('+'4'+')">')
-
-                        }
-                    });
-                });
-            });          
-        </script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./jscript/products.js"> </script>
     </body>
 </html>
