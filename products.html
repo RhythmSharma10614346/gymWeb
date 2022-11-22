@@ -16,8 +16,28 @@
       <script src="./jscript/script.js"></script>
     </head>
     <body>
-      <!--Navbar Section-->
       <div class="sticky-top">
+        <!-- <nav class="navbar  navbar-expand-lg bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="40px" alt="Pro Gym Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym" aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarGym">
+              <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./allproducts.html">Products</a>
+                </li>                  
+              </ul>
+              <form class="d-flex pl-lg-2 searchForm" >
+                  <input class="form-control me-2 searchArea" type="search" placeholder="Search products (Type 3 characters min.) " aria-label="Search">                
+              </form>
+            </div>
+          </div>
+        </nav>-->
         <div class="topnav" id="myTopnav">
           <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
           <a class="" aria-current="page" href="./index.html">Home</a>
@@ -27,8 +47,7 @@
             <i class="fa fa-bars"></i>
           </a>
       </div>
-      </div>          
-      <!-- Product Layout   -->
+      </div>            
         <div class="product-container">
             <div class="row">
                 <div class=" col-lg-2 col-sm-0">
@@ -45,10 +64,8 @@
             </div>            
         </div>
         <div style="height: 10rem;"></div>
-        <!-- Recommended Products -->
         <div class="ProdLine row rows-cols-4">            
         </div>
-        <!-- Reserve Page Modal -->
         <div class="modal fade" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="ReserveModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
@@ -61,7 +78,7 @@
                       <input id="txtFName" class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="First Name (Ex. John)">
                       <input id="txtLName" class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="Last Name (Ex. Doe)">
                       <input id="txtEmail" class="w-100 rounded mt-2" type="email" autocomplete="off" placeholder="Email (Ex. test@example.com)">
-                      <input id="txtContactNo" class="w-100 rounded mt-2" type="tel" autocomplete="off" maxlength="9" placeholder="Contact Number (Ex. 891234567)">                      
+                      <input id="txtContactNo" class="w-100 rounded mt-2" type="tel" autocomplete="off" placeholder="Contact Number (Ex. 891234567)">                      
                     </form>
                   </div>            
                   <div class="modal-footer">
@@ -70,7 +87,6 @@
               </div>
           </div>
           </div>
-          <!-- Thank you Modal -->
           <div class="modal fade" id="ThankYouModal" tabindex="-1" role="dialog" aria-labelledby="ThankYouModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -88,7 +104,59 @@
           </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="./jscript/products.js"> </script>
-    </body>
+
+  <!--Footer-->
+  </div>
+  <div class="footer">
+    <div class="legal">
+      <p>LEGAL</p>
+      <a href="#">
+        <h3>Privacy policy</h3>
+      </a>
+      <a href="#">
+        <h3>Term and Conditions</h3>
+      </a>
+      <a href="#">
+        <h3>Cookies</h3>
+      </a>
+      <a href="#">
+        <h3>Copyrights</h3>
+      </a>
+    </div>
+    <div class="content">
+      <p>CONTENT</p>
+      <a href="#">
+        <h3>Products</h3>
+      </a>
+      <a href="#">
+        <h3>Membership</h3>
+      </a>
+      <a href="#">
+        <h3>Personal Trainer</h3>
+      </a>
+      <a href="#">
+        <h3>Supplements</h3>
+      </a>
+    </div>
+    <div class="social">
+      <p>Follow</p>
+      <a href="https://www.facebook.com/"><img src="./media/fb.png"></a>
+      <img src="./media/ins.png">
+      <img src="./media/li.png">
+      <img src="./media/tw.png">
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="rights">
+      <a href="10614346 & 10611964"> <b> ® All Rights Reserved </b> </a>
+    </div>
+  </footer>
+  <script src="./jscript/script.js"></script>
+</body>
+
 </html>

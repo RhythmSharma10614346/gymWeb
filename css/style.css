@@ -146,61 +146,6 @@ body .header .nav .searchArea button {
     padding: 5 5px;
 }
 
-body .header .nav .contactNav {
-    padding: 5px 25px;
-    display: flex;
-    flex-direction: row;
-}
-
-body .header .nav .contactNav a {
-    color: #f39322;
-    text-decoration: none;
-    margin-left: 20px;
-
-}
-
-body .header .nav .contactNav a::after {
-    content: '';
-    width: 0px;
-    background: #003399;
-    display: block;
-    height: 80%;
-    position: absolute;
-}
-
-body .header .nav .contactNav a:hover {
-    text-decoration: underline;
-}
-
-body .header .nav .contactNav a:last-child::after {
-    content: unset;
-}
-
-body .header .nav .mainNav {
-    padding: 5px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-body .header .nav .mainNav a {
-    color: #f39322;
-    margin: 0 20px;
-    padding: 10px 0;
-    text-decoration: none;
-    position: relative;
-}
-
-body .header .nav .mainNav a:hover {
-    color: #003399;
-}
-
-body .header .nav .mainNav a::after {
-    content: '';
-    width: 0px;
-    right: 0px;
-    background: #0c0c2a44;
-}
 
 /* home banner carousel tagline*/
 
@@ -219,19 +164,21 @@ body .header .nav .mainNav a::after {
     position: relative;
 }
 
-h1 {
-    font-size: 80px;
-    border-radius: 70px;
-    padding: 25px 10px;
+body .tagline h1 {
+    font-size: 60px;
+    border-radius: 20px;
+    margin: 10px 5px;
+    padding: 5px 10px;
     text-align: center;
-    color: #fff;
+    color: #f39322;
 }
 
-h2 .margin {
-    font-size: 60px;
+
+.tagline h2 {
+    font-size: 35px;
     text-align: center;
     text-decoration: none;
-    margin-top: 5%;
+    margin-top: 10px;
 }
 h2 .margin:hover {
     text-shadow: #f39322;
