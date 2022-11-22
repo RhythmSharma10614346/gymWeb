@@ -1,23 +1,24 @@
 <html>
 
-    <head>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-      <!-- JavaScript Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-          crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="./jscript/script.js"></script>
-    </head>
-    <body>
-      <div class="sticky-top">
-        <!-- <nav class="navbar  navbar-expand-lg bg-dark ">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./jscript/script.js"></script>
+</head>
+
+<body>
+  <div class="sticky-top">
+    <!-- <nav class="navbar  navbar-expand-lg bg-dark ">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="40px" alt="Pro Gym Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym" aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,73 +39,132 @@
             </div>
           </div>
         </nav>-->
-        <div class="topnav" id="myTopnav">
-          <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
-          <a class="" aria-current="page" href="./index.html">Home</a>
-          <a class="" href="./allproducts.html">Products</a>
-          <input class="search-bar" type="search" placeholder="Search products" onclick="goToAllProducts()" aria-label="Search">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+    <div class="topnav" id="myTopnav">
+      <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
+      <a class="" aria-current="page" href="./index.html">Home</a>
+      <a class="" href="./allproducts.html">Products</a>
+      <input class="search-bar" type="search" placeholder="Search products" onclick="goToAllProducts()"
+        aria-label="Search">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <div class="product-container">
+    <div class="row">
+      <div class=" col-lg-2 col-sm-0">
       </div>
-      </div>            
-        <div class="product-container">
-            <div class="row">
-                <div class=" col-lg-2 col-sm-0">
-                </div>
-                <div class=" col-lg-4 col-sm-12 pr-0 mr-2">
-                    <div class="img-container">                      
-                    </div>
-                </div>
-                <div class=" col-lg-4 col-sm-12 pl-0 ml-2">
-                    <div class="info-container">
-                                             
-                    </div>
-                </div>                
-            </div>            
+      <div class=" col-lg-4 col-sm-12 pr-0 mr-2">
+        <div class="img-container">
         </div>
-        <div style="height: 10rem;"></div>
-        <div class="ProdLine row rows-cols-4">            
+      </div>
+      <div class=" col-lg-4 col-sm-12 pl-0 ml-2">
+        <div class="info-container">
+
         </div>
-        <div class="modal fade" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="ReserveModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h4 class="modal-title" id="ReserveModalLabel">Reserve your product</h4>
-                  </div>
-                  <div class="modal-body" id="ReserveModalBody">                                      
-                    <form>
-                      <select class="w-100 rounded mt-2" id="ddProdList"></select>
-                      <input id="txtFName" class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="First Name (Ex. John)">
-                      <input id="txtLName" class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="Last Name (Ex. Doe)">
-                      <input id="txtEmail" class="w-100 rounded mt-2" type="email" autocomplete="off" placeholder="Email (Ex. test@example.com)">
-                      <input id="txtContactNo" class="w-100 rounded mt-2" type="tel" autocomplete="off" placeholder="Contact Number (Ex. 891234567)">                      
-                    </form>
-                  </div>            
-                  <div class="modal-footer">
-                      <button class="btn btn-gym" onclick="ReserveComplete()"> Submit Details </button>
-                  </div>
-              </div>
-          </div>
-          </div>
-          <div class="modal fade" id="ThankYouModal" tabindex="-1" role="dialog" aria-labelledby="ThankYouModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="ThankYouModalLabel">Your product has been Reserved</h4>
-                    </div>
-                    <div class="modal-body" id="ThankYouModalBody">                                      
-                      <h3>Thank you for shopping with Us.</h3>
-                    </div>            
-                    <div class="modal-footer">
-                        <button class="btn btn-gym" onclick="CloseTYModal()"> Close </button>
-                    </div>
-                </div>
-            </div>
-          </div>
+      </div>
+    </div>
+  </div>
+  <div style="height: 10rem;"></div>
+  <div class="ProdLine row rows-cols-4">
+  </div>
+  <div class="modal fade" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="ReserveModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="ReserveModalLabel">Reserve your product</h4>
+        </div>
+        <div class="modal-body" id="ReserveModalBody">
+          <form>
+            <select class="w-100 rounded mt-2" id="ddProdList"></select>
+            <input id="txtFName" class="w-100 rounded mt-2" type="text" autocomplete="off"
+              placeholder="First Name (Ex. John)">
+            <input id="txtLName" class="w-100 rounded mt-2" type="text" autocomplete="off"
+              placeholder="Last Name (Ex. Doe)">
+            <input id="txtEmail" class="w-100 rounded mt-2" type="email" autocomplete="off"
+              placeholder="Email (Ex. test@example.com)">
+            <input id="txtContactNo" class="w-100 rounded mt-2" type="tel" autocomplete="off"
+              placeholder="Contact Number (Ex. 891234567)">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-gym" onclick="ReserveComplete()"> Submit Details </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ThankYouModal" tabindex="-1" role="dialog" aria-labelledby="ThankYouModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="ThankYouModalLabel">Your product has been Reserved</h4>
+        </div>
+        <div class="modal-body" id="ThankYouModalBody">
+          <h3>Thank you for shopping with Us.</h3>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-gym" onclick="CloseTYModal()"> Close </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="./jscript/products.js"> </script>
-    </body>
+
+  <!--Footer-->
+  </div>
+  <div class="footer">
+    <div class="legal">
+      <p>LEGAL</p>
+      <a href="#">
+        <h3>Privacy policy</h3>
+      </a>
+      <a href="#">
+        <h3>Term and Conditions</h3>
+      </a>
+      <a href="#">
+        <h3>Cookies</h3>
+      </a>
+      <a href="#">
+        <h3>Copyrights</h3>
+      </a>
+    </div>
+    <div class="content">
+      <p>CONTENT</p>
+      <a href="#">
+        <h3>Products</h3>
+      </a>
+      <a href="#">
+        <h3>Membership</h3>
+      </a>
+      <a href="#">
+        <h3>Personal Trainer</h3>
+      </a>
+      <a href="#">
+        <h3>Supplements</h3>
+      </a>
+    </div>
+    <div class="social">
+      <p>Follow</p>
+      <a href="https://www.facebook.com/"><img src="./media/fb.png"></a>
+      <img src="./media/ins.png">
+      <img src="./media/li.png">
+      <img src="./media/tw.png">
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="rights">
+      <a href="10614346 & 10611964"> <b> ® All Rights Reserved </b> </a>
+    </div>
+  </footer>
+  <script src="./jscript/script.js"></script>
+</body>
+
 </html>
