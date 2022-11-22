@@ -54,7 +54,7 @@
           <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
           <a class="" aria-current="page" href="./index.html">Home</a>
           <a class="" href="#">Products</a>
-          <input class="search-bar" type="search" placeholder="Search products (Type 3 characters min.) " aria-label="Search">
+          <input class="search-bar" id="search" type="search" placeholder="Search products" autocomplete="off" onkeyup="searchProduct()"  aria-label="Search">
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -63,16 +63,16 @@
        
   <!--Banner Section-->
 
-  <div class="productBanner">
+  <!-- <div class="productBanner">
     <img src="./media/pattern.png" alt="banner for product page">
     <div class="product-collection">
       <h1><b>Shop your Favourite workout equipment with us</b></h1>
     </div>
-  </div>
+  </div> -->
 
   <!-- Containers for products-->
   
-    <div class="row" id="allProducts">
+    <div class="row rows-cols-3" id="allProducts">
     </div>
       <!--
     <div class="col-sm-12 col-lg-3 col-md-3">

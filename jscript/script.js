@@ -11,8 +11,14 @@ function searchProduct() {
       }
   }
 }
-
-function changeMainImg(img){
-  $('#mainImg').removeAttr("src");
-  $('#mainImg').attr("src",img);
+function goToAllProducts(){
+ window.location.href='./allproducts.html' ;
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }

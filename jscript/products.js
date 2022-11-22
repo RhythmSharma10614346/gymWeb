@@ -6,7 +6,7 @@ $(document).ready(()=>{
       $.getJSON('./prodDetails.json', (data)=>{
         let counter=0;
           data.forEach((Prod)=>{            
-            console.log(counter)
+            $('#ddProdList').append(' <option value="'+Prod.id+'">'+Prod.Name+'</option>')
               if(search.indexOf(Prod.id) != -1 && Prod.id == type){
                 $('.info-container').append('<h2>'+Prod.Name+'</h2>'+
                 '<h1> </h1>'+
@@ -51,5 +51,41 @@ function openReserve() {
     $("#ReserveModal").modal('show');
   };
   function ReserveComplete(){
-    $("#ReserveModal").modal('hide');
+    if ($('#txtContact').val() == "") { 
+      alert('Mobile Number cannot be blank');       
+    }
+    else if ($('#txtFName').val() == "") { 
+      alert('First Name cannot be blank'); 
+    }
+    else if ($('#txtLName').val() == "") { 
+      alert('Last Name cannot be blank'); 
+    }
+    else if (!ValidateEmail()){
+      alert('Please enter valid mail');
+    }    
+    else{
+          $("#ReserveModal").modal('hide');
+          $("#ThankYouModal").modal('show');
+        }
+    
   }
+  function ValidateEmail() {
+    var vmail = $('#txtEmail').val();   
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(vmail.match(mailformat)){
+      return true;
+    }
+    else{
+      return false;
+    }
+}
+function CloseTYModal(){
+  $("#ThankYouModal").modal('hide'); 
+}
+  function changeMainImg(img){
+    $('#mainImg').removeAttr("src");
+    $('#mainImg').attr("src",img);
+  }
+  function goToAllProducts(){
+    window.location.href='./allproducts.html' ;
+   }

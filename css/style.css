@@ -82,7 +82,7 @@ body .nav-link:hover {
   .topnav .search-bar{
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -102,7 +102,7 @@ body .nav-link:hover {
   .topnav .icon {
     display: none;
   }
- 
+
   
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -422,6 +422,10 @@ body .product-collection {
     color: #fff!important;
     opacity: 0.75;
 }
+#ThankYouModal{
+    opacity: 100%;
+    background-color:rgba(0, 0, 0, 0.5)
+}
 
 @media (max-width: 768px){
 body .banner{
@@ -440,10 +444,54 @@ body .banner{
     }
 
 }
-.card{
-    height: 50rem !important; 
+#allProducts .card{
+    height: 40rem !important; 
+    width: 40rem !important;
 }
-.card .more-products .card-img-top img{
+#allProducts img{
     height: 30rem !important;
+    width: 40rem !important;
+}
+
+#allProducts .product-container{
+    padding-right:0px ;
+    padding-top: 15px;
+}
+
+.product-container .card-title {
+    color:#000;
+}
+
+.ProdLine .card-title {
+    color:#000;
+}
+
+.ProdLine .card{
+    height: 30rem !important; 
     width: 30rem !important;
+}
+.ProdLine img{
+    height: 20rem !important;
+    width: 30rem !important;
+}
+
+@media only screen and (max-width:500px){
+    .ProdLine .card{
+        height: 30rem !important; 
+        width: 30rem !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        left: 15%;
+    }
+
+}
+
+#ddProdList{
+    height: 35px;
+    font-size: 1.75rem;
+    background-color: #666666;
+    border: #f39322 solid 1px;
+    color: #fff!important;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

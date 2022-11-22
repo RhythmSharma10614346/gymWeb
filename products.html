@@ -37,12 +37,12 @@
               </form>
             </div>
           </div>
-        </nav>       -->
+        </nav>-->
         <div class="topnav" id="myTopnav">
           <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
           <a class="" aria-current="page" href="./index.html">Home</a>
           <a class="" href="./allproducts.html">Products</a>
-          <input class="search-bar" type="search" placeholder="Search products (Type 3 characters min.) " aria-label="Search">
+          <input class="search-bar" type="search" placeholder="Search products" onclick="goToAllProducts()" aria-label="Search">
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -64,7 +64,7 @@
             </div>            
         </div>
         <div style="height: 10rem;"></div>
-        <div class="ProdLine">            
+        <div class="ProdLine row rows-cols-4">            
         </div>
         <div class="modal fade" id="ReserveModal" tabindex="-1" role="dialog" aria-labelledby="ReserveModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
@@ -74,16 +74,33 @@
                   </div>
                   <div class="modal-body" id="ReserveModalBody">                                      
                     <form>
-                      <input class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="First Name ...">
-                      <input class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="Last Name ...">
-                      <input class="w-100 rounded mt-2" type="email" autocomplete="off" placeholder="Email ...">
-                      <input class="w-100 rounded mt-2" type="tel" autocomplete="off" placeholder="Contact Number ...">                      
+                      <select class="w-100 rounded mt-2" id="ddProdList"></select>
+                      <input id="txtFName" class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="First Name (Ex. John)">
+                      <input id="txtLName" class="w-100 rounded mt-2" type="text" autocomplete="off" placeholder="Last Name (Ex. Doe)">
+                      <input id="txtEmail" class="w-100 rounded mt-2" type="email" autocomplete="off" placeholder="Email (Ex. test@example.com)">
+                      <input id="txtContactNo" class="w-100 rounded mt-2" type="tel" autocomplete="off" placeholder="Contact Number (Ex. 891234567)">                      
                     </form>
                   </div>            
                   <div class="modal-footer">
                       <button class="btn btn-gym" onclick="ReserveComplete()"> Submit Details </button>
                   </div>
               </div>
+          </div>
+          </div>
+          <div class="modal fade" id="ThankYouModal" tabindex="-1" role="dialog" aria-labelledby="ThankYouModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="ThankYouModalLabel">Your product has been Reserved</h4>
+                    </div>
+                    <div class="modal-body" id="ThankYouModalBody">                                      
+                      <h3>Thank you for shopping with Us.</h3>
+                    </div>            
+                    <div class="modal-footer">
+                        <button class="btn btn-gym" onclick="CloseTYModal()"> Close </button>
+                    </div>
+                </div>
+            </div>
           </div>
 
 

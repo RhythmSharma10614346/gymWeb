@@ -51,7 +51,7 @@
             <a class="active" href="#"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
             <a class="" aria-current="page" href="#">Home</a>
             <a class="" href="./allproducts.html">Products</a>
-            <input class="search-bar" type="search" placeholder="Search products (Type 3 characters min.) " aria-label="Search">
+            <input class="search-bar" type="search" placeholder="Search products" onclick="goToAllProducts()" aria-label="Search">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -124,26 +124,16 @@
             <div class="container-fluid bg-3 text-center">
                 <p class="margin">Products on Discount upto 40%</p><br>
                 <div class="row">
-
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <h2>Yoga Mat</h2>
                         <img src="./media/5.png" class="img-responsive margin" style="width:90%" alt="YogaMat">
                     </div><br>
-
-
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <h2>Shakers</h2>
                         <img src="./media/13.png" class="img-responsive margin" style="width:90%" alt="Shakers">
-                    </div><br>
-
-
-                    <div class="col-sm-3">
-                        <h2>BCAA Supplement</h2>
-                        <img src="./media/12.png" class="img-responsive margin" style="width:90%" alt="BCAA">
-                    </div><br>
-
-                    <div class="col-sm-3">
-                        <h2>Dumbells 2kg</h2>
+                    </div><br>                   
+                    <div class="col-sm-4">
+                        <h2>Dumbells 8kg</h2>
                         <img src="./media/11.png" class="img-responsive margin" style="width:90%" alt="Dumbells">
                     </div><br>
                 </div>
@@ -197,16 +187,7 @@
             <a href="10614346 & 10611964"> <b> ® All Rights Reserved </b> </a>
         </div>
     </footer>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
+    <script src="./jscript/script.js"></script>
 </body>
 
 </html>
