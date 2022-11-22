@@ -11,7 +11,11 @@ $(document).ready(()=>{
                 $('.info-container').append('<h2>'+Prod.Name+'</h2>'+
                 '<h1> </h1>'+
                 '<hr>'+
-                '<h4>Product Ratings</h4>'+
+                '<h4>Product Rating <span>');
+                for(let i=0;i<Prod.Ratings;i++){
+                  $('.info-container').append('<i class="fa fa-star checked"></i>');
+                }
+                $('.info-container').append('</h4>'+
                 '<h3>Price : € '+Prod.Rate+'</h3>'+
                 '<ul>    '+
                 '<li class="prod-spec">'+Prod.Spec1+'</li> '+
@@ -30,14 +34,14 @@ $(document).ready(()=>{
                 '<img class="product-icon" src='+Prod.ImgURL3+' alt="icon" onclick="changeMainImg('+"'"+Prod.ImgURL3+"'"+')">'+
                 '<img class="product-icon" src='+Prod.ImgURL4+' alt="icon" onclick="changeMainImg('+"'"+Prod.ImgURL4+"'"+')">')
               }
-              else if(counter<5){
+              else if(counter<5 ){
                   $(".ProdLine").append(
                     '<div class="col-sm-12 col-lg-3 col-md-3">'+
 '<div class="card">'+
 '<img class="more-products card-img-top" src="'+Prod.ImgURL1+'" alt="'+Prod.Name+'">'+
 '<div class="card-body">'+
 '<h5 class="card-title">'+Prod.Name+'</h5>'+
-'<a href="./products.html?id='+Prod.id+'" class="btn btn-primary">More</a>'+
+'<a href="./products.html?id='+Prod.id+'" class="btn btn-gym">Details</a>'+
 '</div>'+
 '</div>'+
 '</div>')         
