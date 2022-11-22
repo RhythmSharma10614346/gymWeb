@@ -12,136 +12,88 @@
 
 <body>
   <!--Header Section-->
-    <head>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-      <!-- JavaScript Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-          crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
-    </head>
-    <body>
-      <div class="sticky-top">
-        <!-- <nav class="navbar navbar-expand-lg bg-dark ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./media/Logo.png" width="150px" height="40px" alt="Pro Gym Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGym" aria-controls="navbarGym" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarGym">
-              <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./allproducts.html">Products</a>
-                </li>                  
-              </ul>
-              <form class="d-flex pl-lg-2 searchForm" >
-                  <input class="form-control me-2 searchArea" type="search" placeholder="Search products (Type 3 characters min.) " aria-label="Search">                
-              </form>
-            </div>
-          </div>
-        </nav>       -->
-        <div class="topnav" id="myTopnav">
-          <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
-          <a class="" aria-current="page" href="./index.html">Home</a>
-          <a class="" href="#">Products</a>
-          <input class="search-bar" id="search" type="search" placeholder="Search products" autocomplete="off" onkeyup="searchProduct()"  aria-label="Search">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
-      </div>           
-       
-  <!--Banner Section-->
 
-  <!-- <div class="productBanner">
-    <img src="./media/pattern.png" alt="banner for product page">
-    <div class="product-collection">
-      <h1><b>Shop your Favourite workout equipment with us</b></h1>
-    </div>
-  </div> -->
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Containers for products-->
-  
-    <div class="row rows-cols-3" id="allProducts">
-    </div>
-      <!--
-    <div class="col-sm-12 col-lg-3 col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+  </head>
+
+  <body>
+    <div class="sticky-top">
+      <div class="topnav" id="myTopnav">
+        <a class="active" href="./index.html"><img class="navbar-logo" src="./media/Logo.png" alt="Pro Gym Logo"></a>
+        <a class="" aria-current="page" href="./index.html">Home</a>
+        <a class="" href="#">Products</a>
+        <input class="search-bar" id="search" type="search" placeholder="Search products" autocomplete="off"
+          onkeyup="searchProduct()" aria-label="Search">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
-    <div class="col-sm-12 col-lg-3 col-md-3">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div></div>
-    -->
-    
     <br>
-  
+
 
     <!--Footer-->
-  <div class="footer">
-    <div class="legal">
-      <h4>LEGAL</h4>
-      <br>
-      <a href="#">Privacy policy</a>
-      <br>
-      <a href="#">Term and Conditions</a>
-      <br>
-      <a href="#">Cookies</a>
-      <br>
-      <a href="#">Copyrights</a>
     </div>
-    <div class="content">
-      <h4>CONTENT</h4>
-      <br>
-      <a href="#">Products</a>
-      <br>
-      <a href="#">Membership</a>
-      <br>
-      <a href="#">Personal Trainer</a>
-      <br>
-      <a href="#">Supplements</a>
+    <div class="footer">
+      <div class="legal">
+        <p>LEGAL</p>
+        <a href="#">
+          <h3>Privacy policy</h3>
+        </a>
+        <a href="#">
+          <h3>Term and Conditions</h3>
+        </a>
+        <a href="#">
+          <h3>Cookies</h3>
+        </a>
+        <a href="#">
+          <h3>Copyrights</h3>
+        </a>
+      </div>
+      <div class="content">
+        <p>CONTENT</p>
+        <a href="#">
+          <h3>Products</h3>
+        </a>
+        <a href="#">
+          <h3>Membership</h3>
+        </a>
+        <a href="#">
+          <h3>Personal Trainer</h3>
+        </a>
+        <a href="#">
+          <h3>Supplements</h3>
+        </a>
+      </div>
+      <div class="social">
+        <p>Follow</p>
+        <a href="https://www.facebook.com/"><img src="./media/fb.png"></a>
+        <img src="./media/ins.png">
+        <img src="./media/li.png">
+        <img src="./media/tw.png">
+      </div>
     </div>
-    <div class="social">
-      <h4>SOCIAL</h4>
-      <br>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-pinterest"></a>
-      <br>
-      <p>Address</p>
-    </div>
-  </div>
 
 
-  <footer>
-    <div class="rights">
-      <a href="10614346 & 10611964"> ® All Rights Reserved</a>
-    </div>
-  </footer>
-  <script src="./jscript/allProducts.js"></script>
-</body>
+    <footer>
+      <div class="rights">
+        <a href="10614346 & 10611964"> <b> ® All Rights Reserved </b> </a>
+      </div>
+    </footer>
+    <script src="./jscript/script.js"></script>
+  </body>
 
 </html>
