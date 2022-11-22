@@ -8,7 +8,7 @@ $(document).ready(()=>{
 '<img class="more-products card-img-top" src="'+Prod.ImgURL1+'" alt="'+Prod.Name+'">'+
 '<div class="card-body">'+
 '<h5 class="card-title">'+Prod.Name+'</h5>'+
-'<a href="./products.html?id='+Prod.id+'" class="btn btn-primary">More</a>'+
+'<a href="./products.html?id='+Prod.id+'" class="btn btn-gym">Details</a>'+
 '</div>'+
 '</div>'+
 '</div>' )                

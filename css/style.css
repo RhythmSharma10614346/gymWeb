@@ -371,18 +371,26 @@ body .banner{
     }
 
 }
-#allProducts .card{
-    height: 40rem !important; 
-    width: 40rem !important;
-}
+
 #allProducts img{
-    height: 30rem !important;
-    width: 40rem !important;
+    height: 20rem !important;
+    width: 30rem !important;
+    object-fit: contain;
 }
 
 #allProducts .product-container{
     padding-right:0px ;
     padding-top: 15px;
+}
+
+#allProducts .card-title {
+    color:#f39322;
+    font-size: 3rem;
+}
+#allProducts .card{
+    height: 30rem !important; 
+    width: 30rem !important;
+    background-color: #e7d7cc5c;
 }
 
 .product-container .card-title {
